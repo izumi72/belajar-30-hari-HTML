@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute</title>
+   <style>
+    /* CSS [target] selector */
+    a[target]  {
+        color:rgb(194, 34, 133)
+    }
+    /* CSS [target="value"] selector */
+    a[target="_self"]{
+        color:aqua;
+    }
+    /* CSS [target~="value"] selector */
+    p[title~="belajar"]{
+        color:yellow;
+    }
+    /* CSS [target|="value"] selector */
+    p[id|="mandi"] {
+        color:green;
+    }
+   </style>
+</head>
+<body>
+    <a href="" >contoh 1</a>
+    <a href="" target="_self">contoh 2</a>
+    <a href="" >contoh 3</a>
+    <a href="" target="_blank">contoh 4</a>
+    <p title="belajar pemprograman"> ini dipilih</p>
+    <p title="belajarpemproggraman"> ini tidak dipilih</p>
+    <p id="mandi">ini bisa</p>
+    <p id="mandiaja">ini gak bisa</p>
+    <p id="mandi-aja">ini bisa</p>
+    
+</body>
+</html>

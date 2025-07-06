@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator selector</title>
+    <style>
+        /* descendant */
+        div p{
+            color:aqua;
+            size: 15px;
+        }
+        /* child */
+        div > h1 {
+            color:blue
+        }
+        /* adjaccent harus berada di bawah atau sejajar sama pilihan */
+        div + h3{
+            color:blueviolet;
+        }
+        /* General sibling */
+        div ~ h4 {
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <article>
+            <p>ini descendant </p>
+            <h1>ini bukan child</h1>
+            <h3>ini tidak adjacent sibling</h3>
+            <h4>ini bukan General</h4>
+        </article>
+        <p> ini descendant</p>
+        <h1>ini child</h1>
+        <h4>ini bukan General</h4>
+    </div>
+<!--  adjacent harus berada disini -->
+    <h3>ini adjacent</h3>
+    <p>ini bukan descendant</p>
+    <h1>ini bukan child</h1>    
+    <h3>ini tidak adjacent</h3>
+    <h4>ini General</h4>
+    <h4>ini General</h4>
+</body>
+</html>
