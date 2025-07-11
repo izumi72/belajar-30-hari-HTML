@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layer</title>
+    <style>
+        @layer a, b;
+
+        h2 {
+                color: blueviolet;
+         }
+
+       @layer a {
+        h1 {
+            color: aqua;
+        }
+       }
+
+       @layer b {
+        h1 {
+            color: rgb(182, 225, 65);
+         }
+       }
+    </style>
+</head>
+<body>
+    <h1>ini judul</h1>
+    <h2>ini sub judul</h2>
+</body>
+</html>
