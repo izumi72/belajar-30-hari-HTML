@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flex Grow Berfungsi</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .perent {
+      height: 100vh; /* buat parent sebesar layar */
+      background-color: aqua;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .child {
+      height: 200px;
+      background-color: white;
+      margin: 5px;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* tidak pakai width! */
+      flex-basis: 0;  /* ukuran awal nol */
+      flex-grow: 0;   /* default tidak tumbuh */
+    }
+
+    .grow {
+      flex-grow: 1;  /* akan tumbuh mengisi ruang kosong */
+    }
+  </style>
+</head>
+<body>
+  <div class="perent">
+    <div class="child grow">1</div>
+    <div class="child">2</div>
+    <div class="child grow">3</div>
+    <div class="child">4</div>
+  </div>
+</body>
+</html>
