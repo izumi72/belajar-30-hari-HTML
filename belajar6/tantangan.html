@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Proyek HTML Dasar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef4f7;
+      margin: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #4a90e2;
+      font-size: 30px;
+
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="center">Profil & Jadwal Saya</h1>
+
+  <h1>Kenapa Saya Mulai Ngoding?</h1>
+  <p>Saya mahasiswa jurusan teknologi informatika. Saya ingin belajar ngoding karena akan memasuki semester 5, dan mayoritas mata kuliah saya berkaitan dengan coding.</p>
+
+  <h2>Data Diri</h2>
+  <p><strong>Nama:</strong> Izumi</p>
+  <p><strong>Hobi:</strong> Membaca komik, mancing, tidur</p>
+  <img src="belajar.jpeg" alt="Foto Saya" style="width: 100%; max-width: 300px; border-radius: 8px;">
+
+  <h2>Jadwal Harian</h2>
+  <table>
+    <tr><th>Waktu</th><th>Kegiatan</th></tr>
+    <tr><td>05:00–07:00</td><td>Lari pagi</td></tr>
+    <tr><td>08:00–09:00</td><td>Mandi + sarapan</td></tr>
+    <tr><td>09:00–12:00</td><td>Main laptop + coding</td></tr>
+    <tr><td>13:00–14:00</td><td>Tidur siang</td></tr>
+    <tr><td>15:00–17:00</td><td>Jalan sore</td></tr>
+  </table>
+
+  <h2>Hubungi Saya</h2>
+  <form>
+    <label>Nama:</label>
+    <input type="text" placeholder="Nama kamu">
+    <label>Email:</label>
+    <input type="email" placeholder="Email aktif">
+    <label>Pesan:</label>
+    <textarea rows="4" placeholder="Tulis pesanmu..."></textarea>
+    <button type="submit">Kirim</button>
+  </form>
+</div>
+
+</body>
+</html>

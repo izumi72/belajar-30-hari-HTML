@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Proyek HTML Dasar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: blue;
+      margin: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #e2eaf3;
+      font-size: 30px;
+      background-color: blue;
+      border-radius: 20px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    h1:hover {
+      background-color: black;
+      color: blue;
+    }
+
+    h2 {
+      color: blue;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-style: solid;
+      border-color: blue;
+      border-radius: 10px;
+      background-color: white;
+    }
+
+    input:hover {
+      background-color: blue;
+      color: white;
+    }
+
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    button:hover {
+      background-color: green;
+      color: white;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .photo {
+      display: block;
+      margin: 20px auto;
+      max-width: 300px;
+      border-radius: 8px;
+    }
+
+    .highlight {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Profil & Jadwal Saya</h1>
+
+  <h2>Kenapa Saya Mulai Ngoding?</h2>
+  <p>Saya mahasiswa jurusan teknologi informatika yang akan memasuki semester 5. Banyak mata kuliah saya nanti berhubungan dengan coding.</p>
+  <p class="highlight">Tapi selama ini saya lebih aktif di dunia desain, bukan di coding. Oleh karena itu, saya mulai belajar ngoding dari sekarang untuk mengejar ketertinggalan dan menyeimbangkan skill saya.</p>
+
+  <h2>Data Diri</h2>
+  <p><strong>Nama:</strong> Izumi</p>
+  <p><strong>Hobi:</strong> Membaca komik, mancing, tidur</p>
+  <img src="belajar.jpeg" alt="Foto Saya" class="photo">
+
+  <h2>Jadwal Harian</h2>
+  <table>
+    <tr><th>Waktu</th><th>Kegiatan</th></tr>
+    <tr><td>05:00–07:00</td><td>Lari pagi</td></tr>
+    <tr><td>08:00–09:00</td><td>Mandi + sarapan</td></tr>
+    <tr><td>09:00–12:00</td><td>Main laptop + coding</td></tr>
+    <tr><td>13:00–14:00</td><td>Tidur siang</td></tr>
+    <tr><td>15:00–17:00</td><td>Jalan sore</td></tr>
+  </table>
+
+  <h2>Hubungi Saya</h2>
+  <form action="#" method="post">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" placeholder="Nama kamu" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Email aktif" required>
+
+    <label for="pesan">Pesan:</label>
+    <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesanmu..." required></textarea>
+
+    <button type="submit">Kirim</button>
+  </form>
+</div>
+
+</body>
+</html>
